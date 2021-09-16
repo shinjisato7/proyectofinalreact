@@ -1,0 +1,25 @@
+.container-logo img {
+  width: 100%;
+}
+.container-logo {
+  float: left;
+  width: 200px;
+}
+
+header > div {
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+.main-navbar {
+  background: white !important;
+}
+.main-navbar button {
+  color: white;
+}
+
+ul.navbar-list {
+  list-style: none;
+  display: flex;
+}
