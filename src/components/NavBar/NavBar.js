@@ -1,4 +1,5 @@
 import logo from "../../assets/logo.png";
+import cartLogo from "../../assets/icons8-shopping-cart-50.png";
 import "./NavBar.css";
 //external
 import AppBar from "@material-ui/core/AppBar";
@@ -18,16 +19,25 @@ const NavBar = () => {
           </Typography>
           <ul className="navbar-list">
             <li>
-              <Button color="inherit">Inicio</Button>
+              <Button color="inherit">Home</Button>
             </li>
             <li>
               <Button color="inherit">Productos</Button>
             </li>
             <li>
-              <Button color="inherit">Preguntas</Button>
+              <Button color="inherit">Eventos</Button>
             </li>
             <li>
-              <Button color="inherit">Donde estamos</Button>
+              <Button color="inherit">Nosotros</Button>
+            </li>
+            <li>
+              <Button color="inherit">Contáctanos</Button>
+            </li>
+            <li className="cart-buttonNav">
+              <Button color="inherit">
+                <img className="cartLogo" src={cartLogo} alt={"logo pagina web"} />
+                <span>0</span>
+              </Button>
             </li>
           </ul>
         </Toolbar>

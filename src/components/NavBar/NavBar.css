@@ -1,5 +1,6 @@
 .container-logo img {
   width: 100%;
+  padding-top: 5px;
 }
 .container-logo {
   float: left;
@@ -13,13 +14,20 @@ header > div {
 }
 
 .main-navbar {
-  background: white !important;
+  background: white;
 }
 .main-navbar button {
-  color: white;
+  color: black;
 }
 
 ul.navbar-list {
   list-style: none;
   display: flex;
+}
+.MuiToolbar-root.MuiToolbar-regular.MuiToolbar-gutters {
+  background: white;
+}
+.cartLogo {
+  align-items: center;
+  width: 25px;
 }
