@@ -12,7 +12,6 @@ const Product = (props) => {
       <h3>{props.title}</h3>
       <p>$ {props.price}</p>
       <ItemCount />
-      <button>Comprar</button>
     </div>
   );
 };

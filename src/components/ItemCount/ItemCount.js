@@ -4,25 +4,33 @@ export default function ItemCount() {
   const [items, setItems] = useState(0);
   const [stock, setStock] = useState(10);
   const [disableButton, setDisableButton] = useState(false);
+  const [count, setCount] = useState(0);
 
-  const sumar = () => {
+  const onAdd = () => {
     if (items < stock) {
       setItems(items + 1);
     } else {
       setDisableButton(true);
     }
   };
-  const restar = () => {
-    setItems(items - 1);
+  const onSubstract = () => {
+    if (items > 0) {
+      setItems(items - 1);
+    } else {
+      setDisableButton(true);
+    }
   };
 
   return (
     <div>
-      <button onClick={restar}>-</button>
+      <button disable={disableButton} onClick={onSubstract}>
+        -
+      </button>
       {items}
-      <button disable={disableButton} onClick={sumar}>
+      <button disable={disableButton} onClick={onAdd}>
         +
       </button>
+      <button onClick={() => setCount(count + 1)}> Comprar </button>
     </div>
   );
 }
