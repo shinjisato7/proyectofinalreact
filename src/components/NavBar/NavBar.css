@@ -31,3 +31,24 @@ ul.navbar-list {
   align-items: center;
   width: 25px;
 }
+
+.main-navbar.navbar-scroll > div {
+  border: none;
+}
+
+.navbar-scroll .container-search-form {
+  display: none;
+}
+.navbar-scroll .nav.bottom-navbar {
+  z-index: 1;
+  margin-top: -68px;
+  display: flex;
+  justify-content: end;
+  width: calc(100% - 100px);
+}
+nav.bottom-navbar {
+  transition: all 0.3s ease;
+}
+.main-navbar.navbar-scroll > div {
+  border: none;
+}

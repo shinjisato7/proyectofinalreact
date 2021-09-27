@@ -7,10 +7,10 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 
-const NavBar = () => {
+const NavBar = (props) => {
   return (
-    <header className="main-navbar">
-      <AppBar position="static">
+    <header>
+      <AppBar position={props.fixed ? "fixed" : "static"} className={`main-navbar ${props.fixed ? "navbar-scroll" : ""}`}>
         <Toolbar>
           <Typography variant="h6">
             <div className="container-logo">
