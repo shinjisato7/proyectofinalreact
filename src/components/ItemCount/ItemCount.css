@@ -1,0 +1,28 @@
+.container-itemcount {
+  font-size: 20px;
+}
+.container-itemcount button {
+  font-size: 20px;
+}
+
+.btn-suma {
+  margin-right: 15px;
+  width: 45px;
+  height: 35px;
+  border-radius: 20px;
+  background-color: aliceblue;
+}
+.btn-resta {
+  margin-left: 15px;
+  width: 45px;
+  height: 35px;
+  border-radius: 20px;
+  background-color: aliceblue;
+}
+.btn-buy {
+  margin-left: 15px;
+  width: 125px;
+  height: 35px;
+  border-radius: 20px;
+  background-color: aliceblue;
+}

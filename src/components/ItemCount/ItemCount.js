@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../ItemCount/ItemCount.css";
 
 export default function ItemCount() {
   const [items, setItems] = useState(0);
@@ -22,15 +23,18 @@ export default function ItemCount() {
   };
 
   return (
-    <div>
-      <button disable={disableButton} onClick={onSubstract}>
+    <div className="container-itemcount">
+      <button className="btn-suma" disable={disableButton} onClick={onSubstract}>
         -
       </button>
       {items}
-      <button disable={disableButton} onClick={onAdd}>
+      <button className="btn-resta" disable={disableButton} onClick={onAdd}>
         +
       </button>
-      <button onClick={() => setCount(count + 1)}> Comprar </button>
+      <button className="btn-buy" onClick={() => setCount(count + 1)}>
+        {" "}
+        Comprar{" "}
+      </button>
     </div>
   );
 }

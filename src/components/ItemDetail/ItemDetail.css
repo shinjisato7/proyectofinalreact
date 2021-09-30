@@ -1,0 +1,26 @@
+.detail-item {
+  margin: 50px;
+  box-shadow: 1px 1px 5px #d5d5d5;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.detail-item .detail-text {
+  width: 100%;
+  padding-left: 100px;
+  justify-content: center;
+  align-items: center;
+}
+.detail-item > div h3 {
+  font-size: 35px;
+}
+.detail-item > div h1 {
+  font-size: 50px;
+}
+
+.detail-item img {
+  width: 50vh;
+  align-self: center;
+  justify-items: center;
+}
