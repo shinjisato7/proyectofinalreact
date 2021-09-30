@@ -1,6 +1,6 @@
 .detail-item {
   margin: 50px;
-  box-shadow: 1px 1px 5px #d5d5d5;
+  box-shadow: 1px 1px 5px #494949;
   padding: 30px;
   display: flex;
   justify-content: center;
@@ -20,7 +20,8 @@
 }
 
 .detail-item img {
-  width: 50vh;
+  width: 45vh;
   align-self: center;
   justify-items: center;
+  margin-left: 25px;
 }
