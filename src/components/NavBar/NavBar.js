@@ -20,19 +20,27 @@ const NavBar = (props) => {
           </Typography>
           <ul className="navbar-list">
             <li>
-              <Button color="inherit">Home</Button>
+              <Link to="/">
+                <Button color="inherit">Home</Button>
+              </Link>
             </li>
             <li>
-              <Button color="inherit">Productos</Button>
+              <Link to="/productsgeneral">
+                <Button color="inherit">Productos</Button>
+              </Link>
             </li>
             <li>
-              <Button color="inherit">Eventos</Button>
+              <Link to="/productdetail">
+                <Button color="inherit">Eventos</Button>
+              </Link>
             </li>
             <li>
               <Button color="inherit">Nosotros</Button>
             </li>
             <li>
-              <Button color="inherit">Contáctanos</Button>
+              <Link to="/contact">
+                <Button color="inherit">Contáctanos</Button>
+              </Link>
             </li>
             <li className="cart-buttonNav">
               <Button color="inherit">

@@ -1,18 +1,20 @@
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import ListProducts from "../components/ListProducts/ListProducts";
 import HomePage from "../pages/Homepage";
 import ContactPage from "../pages/ContactPage";
 import NotFoundPage from "../pages/NotFoundPage";
-import ItemDetail from "../components/ItemDetail/ItemDetail";
+import ProductsGeneral from "../pages/ProductsGeneral";
+import NavBar from "../components/NavBar/NavBar";
+import ProductDetailPage from "../pages/ProductDetailPage";
 
 export default function AppRouter() {
   return (
     <BrowserRouter>
+      <NavBar />
       <Switch>
-        <Route path="/contacto" component={ContactPage}></Route>
+        <Route path="/contact" component={ContactPage}></Route>
         <Route exact path="/" component={HomePage}></Route>
-        <Route exact path="/itemdetail" component={ItemDetail}></Route>
-        <Route exact path="/listproducts" component={ListProducts}></Route>
+        <Route path="/productdetail" component={ProductDetailPage}></Route>
+        <Route exact path="/productsgeneral" component={ProductsGeneral}></Route>
         <Route patch="*" component={NotFoundPage}></Route>
       </Switch>
     </BrowserRouter>
