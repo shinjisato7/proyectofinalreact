@@ -11,9 +11,9 @@ export default function AppRouter() {
     <BrowserRouter>
       <NavBar />
       <Switch>
-        <Route path="/contact" component={ContactPage}></Route>
+        <Route exact path="/contact" component={ContactPage}></Route>
         <Route exact path="/" component={HomePage}></Route>
-        <Route path="/productdetail" component={ProductDetailPage}></Route>
+        <Route exact path="/productdetail" component={ProductDetailPage}></Route>
         <Route exact path="/productsgeneral" component={ProductsGeneral}></Route>
         <Route patch="*" component={NotFoundPage}></Route>
       </Switch>

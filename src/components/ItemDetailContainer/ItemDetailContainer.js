@@ -27,7 +27,7 @@ function ItemDetailContainer() {
   return (
     <div>
       {console.log("detailProduct: ", detailProducts)}
-      <ItemDetail data={detailProducts} />
+      {detailProducts && <ItemDetail data={detailProducts} />}
     </div>
   );
 }
