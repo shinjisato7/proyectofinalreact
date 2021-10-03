@@ -4,7 +4,7 @@ export const data = [
   {
     id: 1,
     title: "Daruma Rojo",
-    img: Images.img1,
+    img: Images["img1"],
     price: 250,
     description: "Rojo",
     stock: 20,
