@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;800&display=swap");
+
+.classFooter {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  padding: 5px 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+.boxTitle {
+  font-size: 2vh;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+.gridContainer {
+  justify-content: space-evenly;
+  display: flexbox;
+}

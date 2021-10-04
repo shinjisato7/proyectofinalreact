@@ -1,10 +1,10 @@
-import Images from "../components/Images/Images";
+import Images from "../utils/Images";
 
 export const data = [
   {
     id: 1,
     title: "Daruma Rojo",
-    img: Images["img1"],
+    img: Images.img1,
     price: 250,
     description: "Rojo",
     stock: 20,
@@ -12,7 +12,7 @@ export const data = [
   {
     id: 2,
     title: "Daruma Azul",
-    img: "daruma-azul.png",
+    img: Images.img2,
     price: 250,
     description: "Rojo",
     stock: 20,
@@ -20,7 +20,7 @@ export const data = [
   {
     id: 3,
     title: "Daruma Verde",
-    img: "daruma-verde.png",
+    img: Images.img3,
     price: 250,
     description: "Rojo",
     stock: 20,
@@ -28,7 +28,7 @@ export const data = [
   {
     id: 4,
     title: "Daruma Negro",
-    img: "daruma-negro.png",
+    img: Images.img4,
     price: 250,
     description: "Rojo",
     stock: 20,

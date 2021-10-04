@@ -1,7 +1,7 @@
-import darumaRojo from "../../assets/daruma-rojo.png";
-import darumaAzul from "../../assets/daruma-azul.png";
-import darumaNegro from "../../assets/daruma-negro.png";
-import darumaVerde from "../../assets/daruma-verde.png";
+import darumaRojo from "../assets/daruma-rojo.png";
+import darumaAzul from "../assets/daruma-azul.png";
+import darumaNegro from "../assets/daruma-negro.png";
+import darumaVerde from "../assets/daruma-verde.png";
 
 const Images = {
   img1: {

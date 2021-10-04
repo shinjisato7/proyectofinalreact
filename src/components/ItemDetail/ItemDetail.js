@@ -12,9 +12,9 @@ function ItemDetail(props) {
           <img src={`./assets/${props.data.img}`} />
         </div>
         <div className="detail-text">
-          <h1>{props.data.title}</h1>
+          <h4>{props.data.title}</h4>
 
-          <h3>$ {props.data.price}</h3>
+          <p>$ {props.data.price}</p>
           <ItemCount />
         </div>
       </div>

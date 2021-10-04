@@ -1,28 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;800&display=swap");
+
 .container-itemcount {
   font-size: 20px;
+  text-align: center;
 }
 .container-itemcount button {
   font-size: 20px;
 }
 
 .btn-suma {
+  margin-left: 15px;
+  width: 45px;
+  height: 35px;
+  border-radius: 20px;
+  background-color: aliceblue;
+  align-self: center;
+}
+.btn-resta {
   margin-right: 15px;
   width: 45px;
   height: 35px;
   border-radius: 20px;
   background-color: aliceblue;
 }
-.btn-resta {
-  margin-left: 15px;
-  width: 45px;
-  height: 35px;
-  border-radius: 20px;
-  background-color: aliceblue;
-}
 .btn-buy {
-  margin-left: 15px;
-  width: 125px;
+  margin-top: 5px;
+  width: 135px;
   height: 35px;
   border-radius: 20px;
   background-color: aliceblue;
+  font-family: "Montserrat", sans-serif;
 }

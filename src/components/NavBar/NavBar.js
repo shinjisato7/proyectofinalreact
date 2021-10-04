@@ -20,25 +20,27 @@ const NavBar = (props) => {
           </Typography>
           <ul className="navbar-list">
             <li>
-              <Link to="/">
+              <Link className="btn-title-nav" to="/">
                 <Button color="inherit">Home</Button>
               </Link>
             </li>
             <li>
-              <Link to="/productsgeneral">
+              <Link className="btn-title-nav" to="/productsgeneral">
                 <Button color="inherit">Productos</Button>
               </Link>
             </li>
             <li>
-              <Link to="/productdetail">
+              <Link className="btn-title-nav" to="/productdetail">
                 <Button color="inherit">Eventos</Button>
               </Link>
             </li>
             <li>
-              <Button color="inherit">Nosotros</Button>
+              <Link className="btn-title-nav" to="">
+                <Button color="inherit">Nosotros</Button>
+              </Link>
             </li>
             <li>
-              <Link to="/contact">
+              <Link className="btn-title-nav" to="/contact">
                 <Button color="inherit">Contáctanos</Button>
               </Link>
             </li>

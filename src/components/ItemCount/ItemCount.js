@@ -24,16 +24,16 @@ export default function ItemCount() {
 
   return (
     <div className="container-itemcount">
-      <button className="btn-suma" disable={disableButton} onClick={onSubstract}>
+      <button className="btn-resta" disable={disableButton} onClick={onSubstract}>
         -
       </button>
       {items}
-      <button className="btn-resta" disable={disableButton} onClick={onAdd}>
+      <button className="btn-suma" disable={disableButton} onClick={onAdd}>
         +
       </button>
+      <br />
       <button className="btn-buy" onClick={() => setCount(count + 1)}>
-        {" "}
-        Comprar{" "}
+        Comprar
       </button>
     </div>
   );

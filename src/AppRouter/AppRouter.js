@@ -5,6 +5,7 @@ import NotFoundPage from "../pages/NotFoundPage";
 import ProductsGeneral from "../pages/ProductsGeneral";
 import NavBar from "../components/NavBar/NavBar";
 import ProductDetailPage from "../pages/ProductDetailPage";
+import Footer from "../components/Footer/Footer";
 
 export default function AppRouter() {
   return (
@@ -17,6 +18,7 @@ export default function AppRouter() {
         <Route exact path="/productsgeneral" component={ProductsGeneral}></Route>
         <Route patch="*" component={NotFoundPage}></Route>
       </Switch>
+      <Footer />
     </BrowserRouter>
   );
 }
