@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Product from "../Product/Product";
 import { data } from "../../data/data";
+
 // import Images from "../Images/Images";
 
 export default function ItemListContainer() {
@@ -22,7 +23,7 @@ export default function ItemListContainer() {
     <div className="container-general">
       {products.length !== 0 ? (
         products.map((product) => {
-          return <Product key={product.id} image={product.img} title={product.title} price={product.price} />;
+          return <Product key={product.id} image={product.img} category={product.category} title={product.title} price={product.price} />;
         })
       ) : (
         <div>Cargando...</div>

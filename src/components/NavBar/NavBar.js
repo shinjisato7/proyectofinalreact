@@ -1,7 +1,9 @@
 import logo from "../../assets/logo.png";
 import cartLogo from "../../assets/icons8-shopping-cart-50.png";
 import "./NavBar.css";
-import { Link } from "react-router-dom";
+import { Link, NavLink, useParams } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { data } from "../../data/data";
 //external
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
@@ -9,6 +11,27 @@ import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 
 const NavBar = (props) => {
+  const [amulets, setAmulets] = useState([]);
+  const { catId } = useParams();
+
+  useEffect(() => {
+    const getAmulets = new Promise((resolve) => {
+      setTimeout(() => {
+        resolve(data);
+      }, 2000);
+    });
+
+    getAmulets.then((res) => {
+      catId ? setAmulets(res.filter((i) => i.category === catId)) : setAmulets(res);
+    });
+  }, [catId]);
+
+  const categories = [
+    { id: 1, address: "/productsgeneral", text: "Productos" },
+    { id: 2, address: "/category/Daruma", text: "Daruma" },
+    { id: 3, address: "/category/Omamori", text: "Omamori" },
+  ];
+
   return (
     <header>
       <AppBar position={props.fixed ? "fixed" : "static"} className={`main-navbar ${props.fixed ? "navbar-scroll" : ""}`}>
@@ -25,12 +48,18 @@ const NavBar = (props) => {
               </Link>
             </li>
             <li>
-              <Link className="btn-title-nav" to="/productsgeneral">
-                <Button color="inherit">Productos</Button>
-              </Link>
+              {categories.map((cat) => {
+                return (
+                  <div className="" key={cat.id}>
+                    <NavLink to={cat.address} exact activeClassName="">
+                      {cat.text}
+                    </NavLink>
+                  </div>
+                );
+              })}
             </li>
             <li>
-              <Link className="btn-title-nav" to="/productdetail">
+              <Link className="btn-title-nav" to="/producto">
                 <Button color="inherit">Eventos</Button>
               </Link>
             </li>

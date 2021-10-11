@@ -16,6 +16,7 @@ function ItemDetail(props) {
 
           <p>$ {props.data.price}</p>
           <ItemCount />
+          <button className="btn-buy">Comprar</button>
         </div>
       </div>
     </div>

@@ -8,6 +8,7 @@ function ItemDetailContainer() {
     setTimeout(() => {
       const mockProduct = {
         id: "1",
+        category: "Daruma",
         title: "Daruma Rojo",
         img: "daruma-rojo.png",
         price: "250",
