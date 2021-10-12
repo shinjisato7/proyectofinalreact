@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Product.css";
 import ItemCount from "../ItemCount/ItemCount";
+import { NavLink } from "react-router-dom";
 
 const Product = (props) => {
   return (
@@ -14,6 +15,13 @@ const Product = (props) => {
           <p>$ {props.price}</p>
           <ItemCount />
         </div>
+        <NavLink to="/cart">
+          <button className="btn-buy">Comprar</button>
+        </NavLink>
+
+        <NavLink activeClassName="" to={`/producto/${props}`}>
+          <button className="btn-more">Ver Más</button>
+        </NavLink>
       </div>
     </div>
   );

@@ -27,7 +27,7 @@ const NavBar = (props) => {
   }, [catId]);
 
   const categories = [
-    { id: 1, address: "/productsgeneral", text: "Productos" },
+    { id: 1, address: "/productos", text: "Productos" },
     { id: 2, address: "/category/Daruma", text: "Daruma" },
     { id: 3, address: "/category/Omamori", text: "Omamori" },
   ];
@@ -50,8 +50,8 @@ const NavBar = (props) => {
             <li>
               {categories.map((cat) => {
                 return (
-                  <div className="" key={cat.id}>
-                    <NavLink to={cat.address} exact activeClassName="">
+                  <div className="link-productos" key={cat.id}>
+                    <NavLink to={cat.address} exact activeClassName="link-subproductos">
                       {cat.text}
                     </NavLink>
                   </div>

@@ -7,6 +7,7 @@ import ProductsGeneral from "../pages/ProductsGeneral";
 import NavBar from "../components/NavBar/NavBar";
 import ProductDetailPage from "../pages/ProductDetailPage";
 import Footer from "../components/Footer/Footer";
+import Cart from "../pages/Cart";
 import ListProducts from "../components/ListProducts/ListProducts";
 import Daruma from "../pages/Daruma";
 
@@ -32,9 +33,10 @@ export default function AppRouter() {
         <Route exact path="/" component={HomePage} />
         <Route exact path="/contact" component={ContactPage} />
         <Route exact path="/producto/:productId" component={ProductDetailPage} />
-        <Route exact path="/productsgeneral" component={ProductsGeneral} />
-        <Route exact path="/Daruma" comnponent={Daruma} />
-        {/* <Route patch="*" component={NotFoundPage} /> */}
+        <Route exact path="/productos" component={ProductsGeneral} />
+        <Route exact path="/Daruma" component={Daruma} />
+        <Route path="/cart" component={Cart} />
+        <Route patch="*" component={NotFoundPage} />
       </Switch>
       <Footer />
     </BrowserRouter>

@@ -3,31 +3,59 @@
 .container-itemcount {
   font-size: 20px;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 .container-itemcount button {
   font-size: 20px;
 }
+.btn-sumres {
+  display: flex;
+  align-self: center;
+  margin-left: 15px;
+}
 
 .btn-suma {
   margin-left: 15px;
-  width: 45px;
-  height: 35px;
-  border-radius: 20px;
-  background-color: aliceblue;
+  width: 35px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: rgb(113, 118, 121);
+  color: white;
   align-self: center;
 }
 .btn-resta {
   margin-right: 15px;
-  width: 45px;
-  height: 35px;
-  border-radius: 20px;
-  background-color: aliceblue;
+  width: 35px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: rgb(113, 118, 121);
+  color: white;
+  align-self: center;
 }
 .btn-buy {
   margin-top: 5px;
   width: 135px;
   height: 35px;
-  border-radius: 20px;
-  background-color: aliceblue;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(7, 56, 99);
   font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+.btn-more {
+  margin-top: 5px;
+  width: 135px;
+  height: 35px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(7, 56, 99);
+  font-family: "Montserrat", sans-serif;
+
+  color: white;
 }

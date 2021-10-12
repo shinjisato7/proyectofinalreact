@@ -63,3 +63,12 @@ nav.bottom-navbar {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
+
+.link-productos {
+  text-decoration: none;
+}
+.link-subproductos {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+}
