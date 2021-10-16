@@ -1,12 +1,15 @@
 import "./App.css";
 //components
 import AppRouter from "./AppRouter/AppRouter";
+import CartContext from "./context/CartContext";
 
 function App() {
   return (
     //JSX
     <div className="App">
-      <AppRouter />
+      <CartContext.Provider value={[]}>
+        <AppRouter />
+      </CartContext.Provider>
     </div>
   );
 }
