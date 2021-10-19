@@ -1,10 +1,8 @@
 import React, { useContext, useEffect, useState } from "react";
-import "./Cartwidget.css";
+import "./CartWidget.css";
 import CartContext from "../../context/CartContext";
-import ItemCart from "../ItemCart.js/ItemCart";
+import ItemCart from "../ItemCart/ItemCart";
 //Materil ui
-import CloseIcon from "@mui/icons-material/CLose";
-import DeleteIcon from "mui/icons-material/Delete";
 
 export default function CartWidget({ show, close }) {
   const { products } = useContext(CartContext);
@@ -21,9 +19,7 @@ export default function CartWidget({ show, close }) {
     <div className={`cart-widget ${show ? "active" : ""}`}>
       <div className="cart-widget_title">
         <h4> Carrito de compras </h4>
-        <Button onClick={close}>
-          <CloseIcon />
-        </Button>
+        <button onClick={close}>///closeicon</button>
       </div>
       {products.map((product) => {
         return <ItemCart />;

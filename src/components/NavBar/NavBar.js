@@ -1,8 +1,8 @@
+import React, { useEffect, useState } from "react";
 import logo from "../../assets/logo.png";
-import cartLogo from "../../assets/icons8-shopping-cart-50.png";
 import "./NavBar.css";
 import { Link, NavLink, useParams } from "react-router-dom";
-import React, { useEffect, useState } from "react";
+import Cart from "../Cart/Cart";
 import { data } from "../../data/data";
 //external
 import AppBar from "@material-ui/core/AppBar";
@@ -74,10 +74,12 @@ const NavBar = (props) => {
               </Link>
             </li>
             <li className="cart-buttonNav">
-              <Button color="inherit">
+              {/* <Button color="inherit">
                 <img className="cartLogo" src={cartLogo} alt={"logo pagina web"} />
                 <span>0</span>
-              </Button>
+
+              </Button> */}
+              <Cart />
             </li>
           </ul>
         </Toolbar>

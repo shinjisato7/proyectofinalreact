@@ -8,7 +8,6 @@ import NavBar from "../components/NavBar/NavBar";
 import ProductDetailPage from "../pages/ProductDetailPage";
 import Footer from "../components/Footer/Footer";
 import Cart from "../pages/Cart";
-import ListProducts from "../components/ListProducts/ListProducts";
 import Daruma from "../pages/Daruma";
 //context
 import { CartProvider } from "../context/CartContext";
