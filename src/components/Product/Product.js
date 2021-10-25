@@ -1,16 +1,9 @@
-import React, { useContext } from "react";
+import React, { useState, useEffect } from "react";
 import "./Product.css";
 import ItemCount from "../ItemCount/ItemCount";
 import { NavLink } from "react-router-dom";
-import CartContext from "../../context/CartContext";
 
 const Product = (props) => {
-  const { products, addProduct } = useContext(CartContext);
-  const addToCart = () => {
-    console.log("productos desde contexto: ", products);
-    addProduct(props);
-  };
-
   return (
     <div className="container">
       <div className="container-product">
@@ -22,9 +15,10 @@ const Product = (props) => {
           <p>$ {props.price}</p>
           <ItemCount />
         </div>
-        <button className="btn-buy" onClick={addToCart}>
-          Comprar
-        </button>
+        <NavLink to="/cart">
+          <button className="btn-buy">Comprar</button>
+        </NavLink>
+
         <NavLink activeClassName="" to={`/producto/${props}`}>
           <button className="btn-more">Ver Más</button>
         </NavLink>

@@ -1,8 +1,0 @@
-.cart-widget {
-  position: fixed;
-  background-color: beige;
-  top: 0;
-  right: -400px;
-  height: 100vh;
-  z-index: 2;
-}

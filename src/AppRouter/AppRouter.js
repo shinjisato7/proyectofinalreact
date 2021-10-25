@@ -9,8 +9,8 @@ import ProductDetailPage from "../pages/ProductDetailPage";
 import Footer from "../components/Footer/Footer";
 import Cart from "../pages/Cart";
 import Daruma from "../pages/Daruma";
-//context
-import { CartProvider } from "../context/CartContext";
+//Context
+import { CartContextProvider } from "../context/CartContext";
 
 export default function AppRouter() {
   const [fixedScroll, setFixedsScroll] = useState(false);
@@ -29,7 +29,7 @@ export default function AppRouter() {
 
   return (
     <BrowserRouter>
-      <CartProvider>
+      <CartContextProvider>
         <NavBar fixed={fixedScroll} />
         <Switch>
           <Route exact path="/" component={HomePage} />
@@ -41,7 +41,7 @@ export default function AppRouter() {
           <Route patch="*" component={NotFoundPage} />
         </Switch>
         <Footer />
-      </CartProvider>
+      </CartContextProvider>
     </BrowserRouter>
   );
 }

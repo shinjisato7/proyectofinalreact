@@ -29,6 +29,10 @@ ul.navbar-list {
 .MuiToolbar-root.MuiToolbar-regular.MuiToolbar-gutters {
   background: white;
 }
+.cartLogo {
+  align-items: center;
+  width: 25px;
+}
 
 .main-navbar.navbar-scroll > div {
   border: none;

@@ -1,21 +1,37 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useState, useEffect } from "react";
 
 const CartContext = createContext();
 
-const CartProvider = ({ children }) => {
-  const [products, setProducts] = useState([]);
+const CartContextProvider = ({ children }) => {
+  const [cartItems, setCartItems] = useState([]);
+  //   const [total, setTotal] = useState(0);
+  //   const [price, setPrice] = useState(0);
 
-  const addProduct = (product) => {
-    products.push(product);
+  //   useEffect(() => {
+  //     setTotal(handleTotal());
+  //     setPrice(handleTotalPrice());
+  //   }, [cartItems]);
+
+  const addItem = (item, count) => {
+    let cartElement = { item, count };
+    let cartAux = [];
+    if (isInCart(item)) {
+      cartElement = cartItems.find((element) => element.item.id === item.id);
+      cartElement.count = cartElement.count + count;
+      cartAux = [...cartItems];
+    } else {
+      cartAux = [cartElement, ...cartItems];
+    }
+    setCartItems(cartAux);
   };
 
-  const data = {
-    products,
-    addProduct,
+  const isInCart = (item) => {
+    return cartItems && cartItems.some((element) => element.item.id === item.id);
   };
 
-  return <CartContext.Provider value={data}>{children}</CartContext.Provider>;
+  const datas = {};
+
+  return <CartContext.Provider value={datas}>{children}</CartContext.Provider>;
 };
-
-export { CartProvider };
+export { CartContextProvider };
 export default CartContext;

@@ -1,13 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import "../ItemDetail/ItemDetail.css";
 import ItemCount from "../ItemCount/ItemCount";
 import { NavLink } from "react-router-dom";
+import CartContext from "../../context/CartContext";
 
 function ItemDetail(props) {
   const [items, setItems] = useState(0);
   const [stock, setStock] = useState(10);
-  // const [disableButton, setDisableButton] = useState(false);
-  // const [count, setCount] = useState(0);
 
   const onAdd = () => {
     if (items < stock) {
@@ -38,11 +37,7 @@ function ItemDetail(props) {
           <p>$ {props.data.price}</p>
           <ItemCount onSubstract={onSubstract} onAdd={onAdd} quantity={items} />
           <NavLink to="/cart">
-            <button className="btn-buy">Comprar</button>
-          </NavLink>
-
-          <NavLink activeClassName="" to={`/producto/${props}`}>
-            <button className="btn-more">Ver Más</button>
+            <button className="btn-buy">Agregar al Carrito </button>
           </NavLink>
         </div>
       </div>
